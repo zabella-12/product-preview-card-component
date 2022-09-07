@@ -21,7 +21,7 @@ body {
         font-size: 14px;
 }
 
-.block {
+main {
     display: flex;
     border-radius: 2%;
     margin: 6% auto;
@@ -118,7 +118,7 @@ button:hover {
 
    
 
-   .block {
+   main {
     display: block;
     width: 90%;
     height: 650px; 
