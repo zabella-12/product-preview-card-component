@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+:root {
+    --colorBody: hsl(30, 38%, 92%);
+    --darkCian: hsl(158, 36%, 37%);
+    --cian: hsl(158, 57%, 17%);
+    --darkGrayishblue: hsl(228, 12%, 48%);
+    --veryDarkBlue: hsl(212, 21%, 14%)
+}
+
+body {
+        color: var(--darkGrayishblue);
+        background-color: var(--colorBody);
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bolder;
+        line-height: 30px;
+        font-size: 14px;
+}
+
+.block {
+    display: flex;
+    border-radius: 2%;
+    margin: 6% auto;
+    background-color: #ffffff;
+    width: 750px;
+    height: 600px;
+
+
+}
+
+.img-product {
+    
+    background-image:url(assets/image-product-desktop.jpg);
+    border-radius: 2% 0 0 2%;
+    width: 60%;
+    height: 600px;
+    background-size: cover;
+}
+
+
+.content {
+    width: 50%; 
+    margin: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 30px;
+}
+
+.price {
+    display: flex;
+    gap: 25px;
+    
+   
+}
+
+
+
+h1 {
+    color: var(--veryDarkBlue);
+    font-family: 'Fraunces', serif;
+    font-size: 45px;
+    line-height: 50px;
+    
+}
+
+
+
+.new-price{
+    font-family: 'Fraunces', serif;
+    font-size: 40px;
+    color: var(--darkCian);
+}
+
+.old-price {
+    text-decoration: line-through;
+}
+
+.perfume {
+    letter-spacing: 0.5rem;
+}
+
+
+button {
+    border-radius: 10px;
+    width: 100%;
+    border: none;
+    padding: 6% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--darkCian);
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+button img {
+    width: 20px;
+    height: 20px;
+    margin: 0 5%;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--cian);
+    transition: 1s;
+}
+
+
+
+
+@media only screen and (max-width: 480px) {
+
+   
+
+   .block {
+    display: block;
+    width: 90%;
+    height: 650px; 
+   }
+
+   .img-product {
+    display: block;
+    height: 40%;
+    width: 100%;
+    border-radius: 2% 2% 0 0;
+    background-image:url(assets/image-product-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+   
+   }
+
+   .img-product img {
+    width: 100%;
+    height: auto;
+    border-radius: 2% 2% 0 0; 
+    background-size: cover;   
+   }
+
+   .content {
+    width: 90%; 
+    gap: 20px;
+   }
+
+   h1 {
+    font-size: 30px;
+    line-height: 25px;
+
+   }
+
+
+  }
